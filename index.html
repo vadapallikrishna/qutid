@@ -15,7 +15,7 @@ Released under the MIT license: http://jsbin.mit-license.org
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
 <style id="jsbin-css">
-div{
+div:nth-child(1){
   background: linear-gradient(#882323,#b94b4b);
   height: 400px;
   
@@ -26,6 +26,7 @@ div{
 div:nth-child(2){
    background: #382232;
    height: fit-content;
+   color: white;
 }
 
 span:nth-child(1){
@@ -93,6 +94,15 @@ body{
   margin: 0px;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
   
+}
+
+div:nth-child(3){
+  padding: 10px;
+  background-color: #2b2224;
+}
+
+div:nth-child(3) > p {
+  font-size: 24px;
 }
 </style>
 </head>
