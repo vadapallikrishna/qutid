@@ -1,19 +1,20 @@
 
 <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
 <!--
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2019 by krishna (http://jsbin.com/senuzuhojo/1/edit)
+Copyright (c) 2019 by anonymous (http://jsbin.com/redinisuyo/1/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
 <meta name="robots" content="noindex">
-<html>
-<head>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Test Design</title>
+
 <style id="jsbin-css">
 body > div:nth-child(1){
   background: url(https://vectr.com/kvadapalli/b27qWruciS.svg?width=640&height=640&select=b27qWruciSpage0),linear-gradient(#882323,#b94b4b);
@@ -115,12 +116,12 @@ body{
   
 }
 
-div:nth-child(3){
+body > div:nth-child(3){
   padding: 10px;
   background-color: #2b2224;
 }
 
-div:nth-child(3) > .copyright {
+body > div:nth-child(3) > .copyright {
   font-size: 18px;
   color: #c5bebe;
 }
@@ -135,7 +136,7 @@ div:nth-child(3) > .copyright {
   padding: 10px;
   padding-left: 24px;
   justify-content: top; 
-  
+  flex-direction: row
 }
 
 .col{
@@ -146,6 +147,10 @@ div:nth-child(3) > .copyright {
   color: white;
   margin: 10px;
   
+}
+
+.copyright{
+  margin-left: 30px;
 }
 
 .col > p{
