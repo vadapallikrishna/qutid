@@ -15,37 +15,44 @@ Released under the MIT license: http://jsbin.mit-license.org
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
 <style id="jsbin-css">
-div:nth-child(1){
-  background: linear-gradient(#882323,#b94b4b);
+body > div:nth-child(1){
+  background: url(https://vectr.com/kvadapalli/b27qWruciS.svg?width=640&height=640&select=b27qWruciSpage0),linear-gradient(#882323,#b94b4b);
   height: 400px;
   
-  padding: 10px;
+  padding: 20px;
   color:white;
 }
 
-div:nth-child(2){
+body > div:nth-child(2){
    background: #382232;
-   height: fit-content;
+   height: inherit;
+   padding: 10px;
    color: white;
 }
 
-span:nth-child(1){
+.logo{
+    font-size: 42px;
+    
+    text-decoration: none !important;
+}
+
+.logo > span:nth-child(1){
   background: #b70d0d;
   font-weight:bold;
   padding-right:5px;
   padding-left: 5px;
+  
+  
+
+  margin: 0px;
+  
 }
 
-span:nth-child(2){
+.logo span:nth-child(2){
   background: #a73e3e;
 }
 
-div p{
-  padding: 25px;
-  padding-bottom: 20px;
-  font-size: 42px;
-  margin: 0px;
-}
+
 
 button{
   padding:0px;
@@ -63,12 +70,17 @@ button span{
 }
 
 div .caption{
+  font-size: 40px;
   font-family: none;
 }
 
 button:active > span:nth-child(2){
   background: #a22727;
   border-left:4px;
+}
+
+button span:nth-child(1){
+  background:#b70d0d;
 }
 
 button span:nth-child(2){
@@ -101,18 +113,51 @@ div:nth-child(3){
   background-color: #2b2224;
 }
 
-div:nth-child(3) > p {
-  font-size: 24px;
+div:nth-child(3) > .copyright {
+  font-size: 18px;
+  color: #c5bebe;
+}
+
+.text{
+  font-size: 30px;
+}
+
+.row{
+  display: flex;
+  background-color: inherit;
+  padding: 10px;
+  padding-left: 24px;
+  justify-content: top; 
+  width: 100%;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  font-size: 14px !important;
+  color: white;
+  margin: 10px;
+  
+}
+
+.col > p{
+  text-decoration: underline;
+}
+
+.right{
+  float: right;
 }
 </style>
 </head>
 <body>
   <div>
-    <p>
+    <p class="logo">
       <span>Qut</span><span>ID</span>
     <p>
       <button><span>Login with</span><span> QutID</span></button>
     <p class="caption">Blockchain based public key id for centralized apps</p>
+    
   </div>
   <div>
     <section class="box">
@@ -128,6 +173,30 @@ div:nth-child(3) > p {
         Please see the Documentation and the pricing for integration. We offer plans based on user size
       </p>
     </section>
+  </div>
+  <div>
+    <p class="copyright">&copy; Seat Graph Technologies</p>
+    <div class="row">
+      <div class="col">
+        <p>Terms &amp; Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="col">
+        <p>Blog</p>
+        <p>Engineering</p>
+        <p>Careers</p>
+      </div>
+      <div class="col">
+        <p>Product</p>
+        <p>About Team</p>
+        <p>Media</p>
+      </div>
+      <div class="col right">
+        <p class="logo">
+          <span>Qut</span><span>ID</span>
+        </p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
